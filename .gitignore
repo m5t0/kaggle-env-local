@@ -1,0 +1,7 @@
+# cache file
+__pycache__
+.mypy_cache
+
+# environment
+.env
+.venv
