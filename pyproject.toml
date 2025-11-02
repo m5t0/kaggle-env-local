@@ -1,12 +1,12 @@
 [[tool.uv.index]]
-name = "pytorch-cu128"
-url = "https://download.pytorch.org/whl/cu128"
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
 explicit = true
 
 [tool.uv.sources]
-torch = [{ index = "pytorch-cu128" }]
-torchvision = [{ index = "pytorch-cu128" }]
-torchaudio = [{ index = "pytorch-cu128" }]
+torch = [{ index = "pytorch-cu130" }]
+torchvision = [{ index = "pytorch-cu130" }]
+torchaudio = [{ index = "pytorch-cu130" }]
 
 [tool.mypy]
 ignore_missing_imports = true
@@ -14,7 +14,7 @@ ignore_missing_imports = true
 
 [project]
 name = "kaggle-env-local"
-version = "0.1.0"
+version = "0.2.0"
 description = "development environment for kaggle"
 readme = "README.md"
 requires-python = ">=3.12"
