@@ -11,6 +11,8 @@ torchaudio = [{ index = "pytorch-cu130" }]
 [tool.mypy]
 ignore_missing_imports = true
 
+[tool.taskipy.tasks]
+run = "uv run --env-file ./.env"
 
 [project]
 name = "kaggle-env-local"

@@ -12,8 +12,6 @@ def main():
 
     args = parser.parse_args()
 
-    kagglehub.login()
-
     kagglehub.dataset_upload(
         os.environ["KAGGLE_USERNAME"] + "/" + args.dataset_name, args.folder_path
     )
