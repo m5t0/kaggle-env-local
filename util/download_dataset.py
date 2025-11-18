@@ -10,7 +10,8 @@ def copy_into_input(downloaded: Path, input_dir: Path, is_comp: bool) -> Path:
 
     if target.exists():
         shutil.rmtree(target)
-    shutil.copytree(downloaded, target) if downloaded.is_dir() else shutil.copy2(downloaded, target)
+
+    shutil.move(str(downloaded), str(target))
     return target
 
 
